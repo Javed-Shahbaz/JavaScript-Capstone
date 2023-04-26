@@ -18,8 +18,6 @@ button {
   font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
   cursor: pointer;
   width: 90%;
-
-  /* border: 1px solid #000; */
   border: none;
   background-color: hsl(200, 87%, 47%);
   color: hsl(56, 100%, 49%);
