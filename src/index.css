@@ -17,6 +17,7 @@ body {
 button {
   font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
   cursor: pointer;
+  width: 90%;
   /* border: 1px solid #000; */
   border: none;
   background-color: #109BE0;
@@ -51,7 +52,7 @@ ul {
 }
 
 header {
-  background-color: #fff;
+  background-color: cornflowerblue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -67,7 +68,8 @@ header {
 #logo {
   font-size: 24px;  
   font-weight: 700;
-  color: #109BE0;
+  color: #F9EA00;
+  text-shadow: 4px 5px 3px #000000;
 }
 
 .menu {
@@ -83,6 +85,10 @@ header {
   gap: 25px;
 }
 
+.menu ul li:hover {
+  transform: scale(1.1);
+}
+
 header span{
   display: none;
   color: #F15C31;
@@ -92,13 +98,14 @@ header span{
   text-decoration: none;
   font-size: 14xp;
   font-weight: 800;
-  color: #F15C31;
+  color: #F9EA00;
+  text-shadow: 2px 2px 1px #000000;
   transition-duration: 300ms;
 }
 
 .link-item:hover {  
-  color: #109BE0;
-  transform: scale(1.1);
+  color: #fff;
+  /* transform: scale(1.1); */
 }
 
 main {
@@ -113,28 +120,35 @@ main {
 h1 {
   font-size: 32px;
   font-weight: 800;
-  color: #84C55F;
-  text-shadow: 4px 2px 1px #F15C31;
+  color: #F9EA00;
+  text-shadow: 4px 5px 3px #000000;
 }
 
 #dinamic-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 35px;
+  gap: 20px;  
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+  /* width: 100%; */
+  /* height: auto; */
+  gap: 10px;
   border: 1px solid #F15C31;
   border-radius: 10px;
   padding: 7px;
+  background-color: #84C55F;
+  /* width: 60%; */
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .thumbnail-image {
-  width: 250px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 
 .cont-name-like {
@@ -142,11 +156,20 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.episode {
+  margin-left: 10px;
+}
+
+.n-likes{
+  margin-right: 10px;
 }
 
 .episode, 
 .n-likes {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -154,11 +177,19 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  gap: 5px;
 }
 
 .like {
   width: 32px;
   height: auto;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.like:hover {
+  transform: scale(1.2);
 }
 
 .nro-like {
