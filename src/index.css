@@ -21,7 +21,7 @@ button {
   border: none;
   background-color: hsl(200, 87%, 47%);
   color: hsl(56, 100%, 49%);
-  box-shadow: 2px 2px  hsl(98, 47%, 57%);
+  box-shadow: 3px 3px 4px #193b6e;
   border-radius: 5px;
   padding: 0.43rem;
   transition: 300ms;
