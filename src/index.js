@@ -1,4 +1,4 @@
-import './index.css'
+import './index.css';
 import App from './modules/App.js';
 
 window.onload = () => {
