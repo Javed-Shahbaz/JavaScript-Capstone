@@ -1,4 +1,4 @@
-import  getData  from './ApiSimpson.js';
+import getData from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
 
 // Render cards
@@ -14,16 +14,16 @@ async function renderCards() {
     const image = doc.createElement('img');
     image.classList.add('thumbnail-image');
     image.src = episode.thumbnailUrl;
-    image.alt= 'thumbnail image';
+    image.alt = 'thumbnail image';
     const divName = doc.createElement('div');
     divName.classList.add('cont-name-like');
     const pName = doc.createElement('p');
     pName.classList.add('episode');
-    pName.textContent=episode.name;
+    pName.textContent = episode.name;
     const divLike = doc.createElement('div');
     divLike.classList.add('cont-like');
     const imgLike = doc.createElement('img');
-    imgLike.src= iconLike;
+    imgLike.src = iconLike;
     imgLike.classList.add('like');
     imgLike.alt = 'like button';
     const pNroLike = doc.createElement('p');
@@ -31,13 +31,11 @@ async function renderCards() {
     const spanNro = doc.createElement('span');
     spanNro.classList.add('nro-like');
     spanNro.textContent = '5 ';
-    console.log("🚀 ~ file: App.js:34 ~ data.forEach ~ spanNro:", spanNro)
-    pNroLike.textContent ='likes #';
+    pNroLike.textContent = 'likes #';
     pNroLike.appendChild(spanNro);
-    console.log("🚀 ~ file: App.js:35 ~ data.forEach ~ pNroLike:", pNroLike)
     const btnCmts = doc.createElement('button');
     btnCmts.classList.add('comments');
-    btnCmts.textContent='Comments';
+    btnCmts.textContent = 'Comments';
     divLike.appendChild(imgLike);
     divLike.appendChild(pNroLike);
     divName.appendChild(pName);
@@ -45,14 +43,13 @@ async function renderCards() {
     article.appendChild(image);
     article.appendChild(divName);
     article.appendChild(btnCmts);
-    
+
     CardsContainer.appendChild(article);
-    
   });
 }
 
 const App = () => {
   renderCards();
-}
+};
 
 export default App;
