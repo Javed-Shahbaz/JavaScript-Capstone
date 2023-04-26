@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: 'Simpsonfont' ;
+  font-family: 'Simpsonfont';
   src: local('Simpsonfont'), url('./assests/Simpsonfont.woff') format('woff');
 }
 
@@ -18,18 +18,19 @@ button {
   font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
   cursor: pointer;
   width: 90%;
+
   /* border: 1px solid #000; */
   border: none;
-  background-color: #109BE0;
-  color: #F9EA00;
-  box-shadow: 2px 2px #84C55F;
+  background-color: hsl(200, 87%, 47%);
+  color: hsl(56, 100%, 49%);
+  box-shadow: 2px 2px  hsl(98, 47%, 57%);
   border-radius: 5px;
   padding: 0.43rem;
   transition: 300ms;
 }
 
 button:hover {
-  background-color: #F15C31;
+  background-color: hsl(13, 87%, 57%);
   transform: scale(1.05);
 }
 
@@ -38,17 +39,13 @@ ul {
 }
 
 #principal {
-  /* background-image: url(./assests/bg-simpson.jpg);
-  background-repeat: repeat;
-  background-size: cover; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(249, 208, 61, 0.5);
   width: 100%;
-  /* padding: 30px 0; */
-  /* height: 100vh; */
 }
 
 header {
@@ -57,8 +54,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width:100%;
+  width: 100%;
   padding: 15px 50px;
+
   /* position: sticky;
   top: 0;
   left: 0;
@@ -66,10 +64,11 @@ header {
 }
 
 #logo {
-  font-size: 24px;  
+  font-size: 24px;
   font-weight: 700;
   color: #F9EA00;
   text-shadow: 4px 5px 3px #000000;
+  color: hsl(200, 87%, 47%);
 }
 
 .menu {
@@ -78,7 +77,7 @@ header {
   text-align: center;
 }
 
-.menu ul{
+.menu ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -89,14 +88,14 @@ header {
   transform: scale(1.1);
 }
 
-header span{
+header span {
   display: none;
-  color: #F15C31;
+  color: hsl(13, 87%, 57%);
 }
 
 .link-item {
   text-decoration: none;
-  font-size: 14xp;
+  font-size: 14px;
   font-weight: 800;
   color: #F9EA00;
   text-shadow: 2px 2px 1px #000000;
@@ -106,6 +105,13 @@ header span{
 .link-item:hover {  
   color: #fff;
   /* transform: scale(1.1); */
+  color: hsl(13, 87%, 57%);
+  transition-duration: 300ms;
+}
+
+.link-item:hover {
+  color: hsl(200, 87%, 47%);
+  transform: scale(1.1);
 }
 
 main {
@@ -122,6 +128,8 @@ h1 {
   font-weight: 800;
   color: #F9EA00;
   text-shadow: 4px 5px 3px #000000;
+  color: hsl(98, 47%, 57%);
+  text-shadow: 4px 2px 1px hsl(13, 87%, 57%);
 }
 
 #dinamic-content {
@@ -134,15 +142,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
-  /* height: auto; */
+
   gap: 10px;
   border: 1px solid #F15C31;
+  gap: 5px;
+  border: 1px solid hsl(13, 87%, 57%);
   border-radius: 10px;
   padding: 7px;
   background-color: #84C55F;
-  /* width: 60%; */
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .thumbnail-image {
@@ -167,7 +174,7 @@ h1 {
   margin-right: 10px;
 }
 
-.episode, 
+.episode,
 .n-likes {
   font-size: 14px;
   font-weight: 500;
@@ -193,17 +200,17 @@ h1 {
 }
 
 .nro-like {
-  color: #F15C31;
+  color: hsl(13, 87%, 57%);
 }
 
 footer {
   width: 100%;
-  background-color: #84C55F;
+  background-color: whitesmoke;
   padding: 20px;
   margin-top: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #01957D;
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(120, 3%, 6%);
   text-align: center;
 }
