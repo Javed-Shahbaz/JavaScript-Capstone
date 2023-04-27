@@ -1,4 +1,4 @@
-import getData from './ApiSimpson.js';
+import { getData, countOccurrences } from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
 import getLikes from './GetLikes.js';
 import sendLike from './SendLike.js';
@@ -67,8 +67,14 @@ async function renderCards() {
   });
 }
 
+const displayCountItems = async () => {
+  const nro = await countOccurrences();
+  document.getElementById('nro').innerHTML = nro;
+};
+
 const App = () => {
   renderCards();
+  displayCountItems();
 };
 
 export default App;
