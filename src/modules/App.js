@@ -1,5 +1,7 @@
-import getData from './ApiSimpson.js';
+import { getData, countOccurrences } from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
+import getLikes from './GetLikes.js';
+import sendLike from './SendLike.js';
 
 // Render cards
 async function renderCards() {
@@ -7,7 +9,13 @@ async function renderCards() {
   const data = await getData();
   const CardsContainer = document.getElementById('dinamic-content');
 
-  data.forEach((episode) => {
+  const nLikesArray = await Promise.all(data.map((episode) => getLikes(episode.id)));
+  data.forEach((episode, index) => {
+    const nLikes = nLikesArray[index];
+
+    // data.forEach((episode) => {
+    // for (const episode of data) {
+    // const nLikes = await getLikes(episode.id);
     const doc = document;
     const article = doc.createElement('article');
     article.classList.add('card');
@@ -30,7 +38,7 @@ async function renderCards() {
     pNroLike.classList.add('n-likes');
     const spanNro = doc.createElement('span');
     spanNro.classList.add('nro-like');
-    spanNro.textContent = '5 ';
+    spanNro.textContent = nLikes;
     pNroLike.textContent = 'likes #';
     pNroLike.appendChild(spanNro);
     const btnCmts = doc.createElement('button');
@@ -45,11 +53,28 @@ async function renderCards() {
     article.appendChild(btnCmts);
 
     CardsContainer.appendChild(article);
+    // Detect the clik on like
+    imgLike.addEventListener('click', async () => {
+      const itemId = episode.id;
+      const nLikes = await getLikes(itemId);
+      const output = await sendLike(itemId);
+      if (output) {
+        spanNro.textContent = nLikes + 1;
+      } else {
+        spanNro.textContent = 'error';
+      }
+    });
   });
 }
 
+const displayCountItems = async () => {
+  const nro = await countOccurrences();
+  document.getElementById('nro').innerHTML = nro;
+};
+
 const App = () => {
   renderCards();
+  displayCountItems();
 };
 
 export default App;
