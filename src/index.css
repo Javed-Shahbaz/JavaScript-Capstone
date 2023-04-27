@@ -152,7 +152,7 @@ h1 {
 .n-likes {
   margin-right: 0.62em;
   font-size: 0.87em;
-  width: 100%;
+  width: max-content;
 }
 
 .episode,
