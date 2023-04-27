@@ -1,5 +1,6 @@
 import getData from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
+import getLikes from './GetLikes.js';
 
 // Render cards
 async function renderCards() {
@@ -7,7 +8,14 @@ async function renderCards() {
   const data = await getData();
   const CardsContainer = document.getElementById('dinamic-content');
 
-  data.forEach((episode) => {
+  const nLikesArray = await Promise.all(data.map((episode) => getLikes(episode.id)));
+
+  data.forEach((episode, index) => {
+    const nLikes = nLikesArray[index];
+
+    // data.forEach((episode) => {
+    // for (const episode of data) {
+    // const nLikes = await getLikes(episode.id);
     const doc = document;
     const article = doc.createElement('article');
     article.classList.add('card');
@@ -30,7 +38,7 @@ async function renderCards() {
     pNroLike.classList.add('n-likes');
     const spanNro = doc.createElement('span');
     spanNro.classList.add('nro-like');
-    spanNro.textContent = '5 ';
+    spanNro.textContent = nLikes;
     pNroLike.textContent = 'likes #';
     pNroLike.appendChild(spanNro);
     const btnCmts = doc.createElement('button');
