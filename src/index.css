@@ -209,3 +209,18 @@ footer {
   color: hsl(0, 0%, 1%);
   text-align: center;
 }
+
+#popup {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(127, 255, 212,0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.hide {
+  display: none !important;
+}
