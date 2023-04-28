@@ -69,7 +69,7 @@ async function renderCards() {
     const popup = doc.getElementById('popup');
     btnCmts.addEventListener('click', async () => {
       popup.classList.add('show');
-      //const comments = getComments(episode.id);
+      const comments = getComments(episode.id);
     });
 
     const cbtn = doc.getElementById('cross-btn');
