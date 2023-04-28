@@ -4,8 +4,6 @@ import getLikes from './GetLikes.js';
 import sendLike from './SendLike.js';
 import getComments from './GetComments.js';
 
-
-
 // Render cards
 async function renderCards() {
   // Data from simpson api
@@ -71,7 +69,7 @@ async function renderCards() {
     const popup = doc.getElementById('popup');
     btnCmts.addEventListener('click', async () => {
       popup.classList.add('show');
-      const comments = getComments(episode.id);
+      //const comments = getComments(episode.id);
     });
 
     const cbtn = doc.getElementById('cross-btn');
