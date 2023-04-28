@@ -2,7 +2,7 @@ import { API_URL2, AppId } from './Vars.js';
 
 const getComments = async (itemId) => {
   const url = `${API_URL2}apps/${AppId}/comments?item_id=${itemId}`;
-    response = await fetch(url)
+  fetch(url)
     .then((response) => {
       if (response.status === 200) {
         return response.json();
