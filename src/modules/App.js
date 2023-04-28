@@ -69,15 +69,18 @@ async function renderCards() {
     const popup = doc.getElementById('popup');
     btnCmts.addEventListener('click', async () => {
       popup.classList.add('show');
+      console.log(episode);
       document.getElementById('img-popup').src = episode.thumbnailUrl;
       document.getElementById('popup-name').textContent = episode.name;
       document.getElementById('ep-number').textContent = episode.episode;
       document.getElementById('desc').textContent = episode.description;
-      const frmAddComment = document.getElementById('addForm');
+      const frmAddComment = document.querySelector('.addForm');
       frmAddComment.addEventListener('submit', (event) => {
+        console.log('clecked  ads fdsaf asdf sdaf asd');
         event.preventDefault();
         const name = frmAddComment.name.value;
-        const comment = frmAddComment.Comments.value;
+        const comment = frmAddComment.inputcomments.value;
+        console.log(comment);
         const itemId = episode.id;
 
         const d = new Date();
