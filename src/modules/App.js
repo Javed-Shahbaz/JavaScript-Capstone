@@ -74,6 +74,7 @@ async function renderCards() {
       popup.classList.remove('show');
 
     })
+
   });
 }
 
