@@ -211,7 +211,7 @@ footer {
 }
 
 #popup {
-  display: flex;
+  display: none;
   position: fixed;
   flex-direction: column;
   align-items: center;
@@ -226,18 +226,20 @@ footer {
   z-index: 1000;
 }
 
+.show {
+  display: flex !important;
+}
+
 .img-header {
   display: flex;
   flex-direction: column;
   width: 35%;
 }
-/* .hide {
-  display: none !important;
-} */
 
-.cross-btn {
+#cross-btn {
   display: inline-block;
   position: absolute;
+  cursor: pointer;
   font-size: 50px;
   font-weight: 700px;
   right: 20px;
