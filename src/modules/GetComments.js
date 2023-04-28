@@ -7,7 +7,7 @@ const getComments = async (itemId) => {
       if (response.status === 200) {
         return response.json();
       }
-      throw new Error('Comments not found.');
+      throw new Error('Comments not found.')
     })
     .then((data) => {
       const comments = document.getElementById('comments');
