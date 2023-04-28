@@ -1,4 +1,4 @@
-import { getDetails } from './getDetails.js';
+import { getData } from './ApiSimpson.js';
 
 const showCommentPopUp = () => {
   const popup = document.querySelector('.popup');
