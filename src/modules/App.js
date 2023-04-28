@@ -69,7 +69,30 @@ async function renderCards() {
     const popup = doc.getElementById('popup');
     btnCmts.addEventListener('click', async () => {
       popup.classList.add('show');
-      // const comments = getComments(episode.id);
+      document.getElementById('img-popup').src = episode.thumbnailUrl;
+      document.getElementById('popup-name').textContent = episode.name;
+      document.getElementById('ep-number').textContent = episode.episode;
+      document.getElementById('desc').textContent = episode.description;
+      const frmAddComment = document.getElementById('addForm');
+      frmAddComment.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const name = frmAddComment.name.value;
+        const comment = frmAddComment.Comments.value;
+        const itemId = episode.id;
+
+        const d = new Date();
+        const commentDescription = document.getElementById('comments');
+        // const commentConter = document.querySelector('#totalComment');
+
+        const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+        const mo = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(d);
+        const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+        commentDescription.innerHTML += `<li>${ye}-${mo}-${da}  ${name}:   ${comment}</li>`;
+        // commentConter.innerHTML = Number(commentConter.innerHTML) + 1;
+        frmAddComment.reset();
+
+        showComment(itemId, name, comment);
+      })
     });
 
     const cbtn = doc.getElementById('cross-btn');
