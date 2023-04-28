@@ -2,12 +2,12 @@ import { API_URL2, AppId } from './Vars.js';
 
 const getComments = async (itemId) => {
   const url = `${API_URL2}apps/${AppId}/comments?item_id=${itemId}`;
-  const response = await fetch(url)
+    response = await fetch(url)
     .then((response) => {
       if (response.status === 200) {
         return response.json();
       }
-      throw new Error('Comments not found.')
+      throw new Error('Comments not found.');
     })
     .then((data) => {
       const comments = document.getElementById('comments');
