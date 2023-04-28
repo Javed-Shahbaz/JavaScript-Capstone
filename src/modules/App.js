@@ -67,14 +67,11 @@ async function renderCards() {
     const popup = doc.getElementById('popup');
     btnCmts.addEventListener('click', async () => {
       popup.classList.add('show');
-      console.log(popup)
     });
     const cbtn = doc.getElementById('cross-btn');
     cbtn.addEventListener('click', () => {
       popup.classList.remove('show');
-
-    })
-
+    });
   });
 }
 
