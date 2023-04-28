@@ -8,7 +8,7 @@
 
 # 📗 Table of Contents
 
-- [📖 LeadBoard](#about-project)
+- [📖 JS Capstone Module 2](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -30,11 +30,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [LeadBoard] <a name="about-project"></a>
+# 📖 [JS Capstone Module 2] <a name="about-project"></a>
 
 > Its a daily rountine list for users to write down their task.
 
-**[LeadBoard]** is a project for microvesre.
+**[JS Capstone]** is a project for microvesre.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -73,6 +73,7 @@
 - **[WebPack]**
 - **[Gitflow]**
 - **[GoogleApi]**
+- **[TestFunctions]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -81,7 +82,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- [https://javed-shahbaz.github.io/LeadBoard](https://javed-shahbaz.github.io/LeadBoard/)
+ [https://javed-shahbaz.github.io/JavaScript-Capstone](https://javed-shahbaz.github.io/JavaScript-Capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +107,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:https://javed-shahbaz.github.io/LeadBoard.git
+Clone this repository to your desired folder:https://javed-shahbaz.github.io/JavaScript-Capstone.git
 
 <!--
 Example commands:
@@ -156,7 +157,7 @@ Example command:
 
 ### Deployment
 
-https://javed-shahbaz.github.io/LeadBoard/
+https://javed-shahbaz.github.io/JavaScript-Capstone/
 
 <!--
 Example:
@@ -179,15 +180,21 @@ Example:
 - Twitter: [https://twitter.com/javedshahbaz007)
 - LinkedIn: [https://www.linkedin.com/in/javed-shahbaz)
 
+👤 **Larry Villegas**
+
+- GitHub: [https://github.com/LarryIVC)
+- Twitter: [https://twitter.com/LarryVillegas)
+- LinkedIn: [https://www.linkedin.com/in/larry-villegas-26216b259/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add completed task function]**
-- [ ] **[Add edit function]**
-- [ ] **[Add clearall function]**
+- [ ] **[Add Test functions]**
+- [ ] **[Add delete function]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,7 +202,7 @@ Example:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-https://github.com/Javed-Shahbaz/LeadBoard/issues
+https://github.com/Javed-Shahbaz/JavaScript-Capstone/issues
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
