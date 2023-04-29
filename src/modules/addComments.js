@@ -1,23 +1,24 @@
 import { API_URL2, AppId } from "./Vars.js";
-const AddComment = () =>{
-
-};
-
-const showComment = async (Id, name, description) => {
-  const data = `{"item_id": "${Id}", "username": "${name}", "comment": "${description}"}`;
-
-  const mBody = JSON.parse(data);
-
-  const response = await fetch(`${API_URL2}/${AppId}/comments?item_id=${Id}`,
-    {
+// Add data to API
+const addComment = async (comment) => {
+  try {
+    const myHeaders = new Headers();
+    myHeaders.append('Content-Type', 'application/json');
+    const requestOptions = {
       method: 'POST',
-      body: JSON.stringify(mBody),
+      headers: myHeaders,
+      body: comment,
+      redirect: 'follow',
+    };
 
-      headers: { 'Content-Type': 'application/JSON' },
-    });
-  // await response; // extract JSON from the http response
-  const result = await response.text();
-  return result;
+    const response = await fetch(`${ API_URL2 }apps/${ AppId }/comments/`,
+      requestOptions,
+    );
+    const result = await response.text();
+    return result;
+  } catch (error) {
+    return error;
+  }
 };
 
-export { showComment,AddComment };
+export { addComment };
