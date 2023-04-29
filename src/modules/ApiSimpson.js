@@ -17,6 +17,4 @@ const countOccurrences = async () => {
   const data = await getData(API_URL1);
   return data.length;
 };
-
-
 export { getData, countOccurrences };
