@@ -6,11 +6,6 @@ const getComments = async (itemId) => {
   const comments = document.getElementById('comments');
   comments.innerHTML = ` 
   <h3>Comments <span class="comment_count">(0)</span></h3>
-  `
-  const url = `${API_URL2}apps/${AppId}/comments?item_id=${itemId}`;
-  const movieComments = await getData(url);
-
-  if (movieComments.length > 0) { 
   `;
   const url = `${API_URL2}apps/${AppId}/comments?item_id=${itemId}`;
   const movieComments = await getData(url);
