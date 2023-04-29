@@ -1,8 +1,9 @@
+/* eslint-disable */
 import { getData, countOccurrences } from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
 import getLikes from './GetLikes.js';
 import sendLike from './SendLike.js';
-import { addComment } from './addComments.js';
+import addComment from './addComments.js';
 import { API_URL1 } from './Vars.js';
 import getComments from './GetComments.js';
 

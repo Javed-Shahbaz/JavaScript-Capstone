@@ -21,4 +21,4 @@ const addComment = async (comment) => {
   }
 };
 
-export { addComment };
+export default addComment;
