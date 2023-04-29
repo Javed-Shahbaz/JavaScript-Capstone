@@ -64,6 +64,14 @@ async function renderCards() {
         spanNro.textContent = 'error';
       }
     });
+    const popup = doc.getElementById('popup');
+    btnCmts.addEventListener('click', async () => {
+      popup.classList.add('show');
+    });
+    const cbtn = doc.getElementById('cross-btn');
+    cbtn.addEventListener('click', () => {
+      popup.classList.remove('show');
+    });
   });
 }
 

@@ -15,12 +15,32 @@
       <main>
         <h1>The Simpsons - Season 10</h1>
         <div id="dinamic-content">
-
         </div>
       </main>
       <footer>
         <p >Created by: Larry Villegas & Javed Shahbaz</p>
       </footer>
+    </div>
+    <div id="popup" >
+      <div class="img-header">
+        <img id= "img-popup" src="https://images-na.ssl-images-amazon.com/images/M/MV5BYjFiMzA2MGMtNjQwMC00YmVkLWFiODgtZWVkMmU4Yzg2YTQ3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg" alt="" id="image-episode">
+        <p id="cross-btn">X</p>
+      </div>
+      <h2 class="popup-name">Lard of the Dance</h2>
+      <div class="details">
+        <div class="element">
+          <p class="ep-txt">Episode <span id="ep-number"></span></p>
+        </div>
+        <div class="element">
+          <p class="desc">A new girl arrives at Springfield Elementary and becomes instantly popular, with Lisa forced to organize a dance at her school, while Homer and Bart try to start their own grease business.</p>
+        </div>
+      </div>
+      <form action="submit" id="addForm">
+        <h2 id="addScore">Add Comments</h2>
+        <input class="input name" type="text" name="name" placeholder="Your name" required>
+        <input class="input comments" type="text" name="Comments" placeholder="Your comments" required>
+        <input id="add" type="submit" value="Submit">                
+    </form>
     </div>
   </body>
 </html>
