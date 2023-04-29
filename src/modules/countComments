@@ -1,0 +1,15 @@
+import { API_URL2, AppId } from './Vars.js';
+
+const countComments = async (itemId) => {
+  const url = `${API_URL2}apps/${AppId}/comments/`;
+  const response = await fetch(url);
+  const comData = await response.json();
+
+  // Find number of comments for item_id
+  const itemCom = comData.find((item) => item.item_id === itemId);
+
+  // return nuember of comments when exist item or 0
+  return itemCom ? parseInt(itemCom.comments, 10) : 0;
+};
+
+export default countComments;
