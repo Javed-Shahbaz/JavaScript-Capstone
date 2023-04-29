@@ -13,7 +13,7 @@ async function renderCards() {
   const CardsContainer = document.getElementById('dinamic-content');
 
   const nLikesArray = await Promise.all(
-    data.map((episode) => getLikes(episode.id))
+    data.map((episode) => getLikes(episode.id)),
   );
   data.forEach((episode, index) => {
     const nLikes = nLikesArray[index];
@@ -83,7 +83,7 @@ async function renderCards() {
 }
 
 const frmAddComment = document.getElementById('addCommentBtn');
-frmAddComment.addEventListener("click", async (event) => {
+frmAddComment.addEventListener('click', async (event) => {
   event.preventDefault();
   const name = document.querySelector('.inputname').value;
   const comment = document.querySelector('#inputcomments').value;
@@ -97,8 +97,8 @@ frmAddComment.addEventListener("click", async (event) => {
 
     await addComment(commentObj);
     getComments(`${itemId}`);
-    document.querySelector(".inputname").value = "";
-    document.querySelector("#inputcomments").value = "";
+    document.querySelector('.inputname').value = "";
+    document.querySelector('#inputcomments').value = "";
   }
 });
 

@@ -1,4 +1,4 @@
-import { API_URL2, AppId } from "./Vars.js";
+import { API_URL2, AppId } from './Vars.js';
 
 // Add data to API
 const addComment = async (comment) => {
@@ -12,11 +12,9 @@ const addComment = async (comment) => {
       redirect: 'follow',
     };
 
-    const response = await fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/USLjK4j6M0l6C9piwfTK/comments/`,
-      requestOptions,
-    );
+    const response = await fetch(`${ API_URL2 }apps/${ AppId }/comments/`,
+      requestOptions,);
     const result = await response.text();
-    console.log(result);
     return result;
   } catch (error) {
     return error;

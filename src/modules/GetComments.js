@@ -3,7 +3,7 @@ import { getData } from './ApiSimpson.js';
 
 const getComments = async (itemId) => {
   const comments = document.getElementById('comments');
-  comments.innerHTML = "";
+  comments.innerHTML = '';
   const url = `${API_URL2}apps/${AppId}/comments?item_id=${itemId}`;
   const movieComments = await getData(url);
 
