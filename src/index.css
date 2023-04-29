@@ -209,3 +209,59 @@ footer {
   color: hsl(0, 0%, 1%);
   text-align: center;
 }
+
+#popup {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+  top: 0;
+  left: 0;
+  background-color: rgb(127, 255, 212, 1);
+  width: 100vw;
+  height: 120vh;
+  z-index: 1000;
+}
+
+.show {
+  display: flex !important;
+}
+
+.img-header {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+#cross-btn {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  font-size: 50px;
+  right: 20px;
+  top: 20px;
+  color: blue;
+  width: 10%;
+}
+
+#img-popup {
+  width: 90%;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#addForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
