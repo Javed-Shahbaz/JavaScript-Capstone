@@ -3,12 +3,13 @@ import iconLike from "../assests/like.png";
 import getLikes from "./GetLikes.js";
 import sendLike from "./SendLike.js";
 import { addComment } from "./addComments.js";
-// import getComments from './GetComments.js';
+import { API_URL1 } from "./Vars.js";
+import getComments from "./GetComments.js";
 
 // Render cards
 async function renderCards() {
   // Data from simpson api
-  const data = await getData();
+  const data = await getData(API_URL1);
   const CardsContainer = document.getElementById("dinamic-content");
 
   const nLikesArray = await Promise.all(
@@ -68,7 +69,7 @@ async function renderCards() {
         spanNro.textContent = "error";
       }
     });
-    const popup = doc.getElementById("popup");
+const popup = doc.getElementById("popup");
     btnCmts.addEventListener("click", async () => {
       popup.classList.add("show");
       document.getElementById("img-popup").src = episode.thumbnailUrl;
@@ -76,12 +77,13 @@ async function renderCards() {
       document.getElementById("ep-number").textContent = episode.episode;
       document.getElementById("desc").textContent = episode.description;
       document.querySelector(".addForm").setAttribute("id", `${episode.id}`);
+      getComments(`${episode.id}`);
     });
   });
 }
 
 const frmAddComment = document.getElementById("addCommentBtn");
-frmAddComment.addEventListener("click", (event) => {
+frmAddComment.addEventListener("click", async (event) => {
   event.preventDefault();
   const name = document.querySelector(".inputname").value;
   const comment = document.querySelector("#inputcomments").value;
@@ -93,7 +95,8 @@ frmAddComment.addEventListener("click", (event) => {
       "comment": comment,
     });
 
-    addComment(commentObj);
+    await addComment(commentObj);
+    getComments(`${itemId}`);
     document.querySelector(".inputname").value = "";
     document.querySelector("#inputcomments").value = "";
   }
