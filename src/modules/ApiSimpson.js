@@ -13,8 +13,8 @@ const getData = async (link) => {
   }
 };
 
-const countOccurrences = async () => {
+const countItems = async () => {
   const data = await getData(API_URL1);
   return data.length;
 };
-export { getData, countOccurrences };
+export { getData, countItems };

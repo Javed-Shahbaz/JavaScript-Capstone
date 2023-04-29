@@ -1,27 +1,27 @@
-import { countOccurrences } from './ApiSimpson.js';
+import { countItems } from './ApiSimpson.js';
 
 jest.mock('./ApiSimpson.js');
 
-describe('Test number of items that return the API', () => {
+describe('Test umber of items that return the API', () => {
   beforeEach(() => {
     jest.resetModules();
   });
 
-  test('Should return number of total items', async () => {
-    countOccurrences.mockReturnValueOnce(23);
+  test('Should return count of total items', async () => {
+    countItems.mockReturnValueOnce(21);
     // Arrange
-    const expectedNumber = 23;
+    const expNumber = 21;
 
     // Act
-    const numberItems = await countOccurrences();
+    const numItems = await countItems();
 
     // Assert
-    expect(numberItems).toBe(expectedNumber);
+    expect(numItems).toBe(expNumber);
   });
 
   test('Shold be called', async () => {
-    countOccurrences();
+    countItems();
 
-    expect(countOccurrences).toHaveBeenCalled();
+    expect(countItems).toHaveBeenCalled();
   });
 });
