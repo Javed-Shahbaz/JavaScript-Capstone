@@ -68,12 +68,14 @@
 ### Key Features <a name="key-features"></a>
 
 
-- **[HTML]**
-- **[JavaScript]**
-- **[WebPack]**
-- **[Gitflow]**
-- **[GoogleApi]**
-- **[TestFunctions]**
+- Add template 
+- Setup Webpack
+- Apply GitFlow
+- Send & recieve data to or from APIs
+- Use Arrow functions
+- Using async and await Javascript features.
+- Update styles for better UX.
+- Test function whit Jest*
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -179,12 +181,6 @@ Example:
 - GitHub: [https://github.com/Javed-Shahbaz)
 - Twitter: [https://twitter.com/javedshahbaz007)
 - LinkedIn: [https://www.linkedin.com/in/javed-shahbaz)
-
-👤 **Larry Villegas**
-
-- GitHub: [https://github.com/LarryIVC)
-- Twitter: [https://twitter.com/LarryVillegas)
-- LinkedIn: [https://www.linkedin.com/in/larry-villegas-26216b259/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
