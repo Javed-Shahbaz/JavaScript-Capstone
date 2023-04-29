@@ -88,7 +88,7 @@ frmAddComment.addEventListener('click', async (event) => {
   const name = document.querySelector('.inputname').value;
   const comment = document.querySelector('#inputcomments').value;
   const itemId = document.querySelector('#addCommentBtn').parentElement.id;
-  if (name !== "" && comment !== "") {
+  if (name !== '' && comment !== '') {
     const commentObj = JSON.stringify({
       item_id: itemId,
       username: name,
@@ -97,8 +97,8 @@ frmAddComment.addEventListener('click', async (event) => {
 
     await addComment(commentObj);
     getComments(`${itemId}`);
-    document.querySelector('.inputname').value = "";
-    document.querySelector('#inputcomments').value = "";
+    document.querySelector('.inputname').value = '';
+    document.querySelector('#inputcomments').value = '';
   }
 });
 

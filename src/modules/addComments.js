@@ -12,8 +12,8 @@ const addComment = async (comment) => {
       redirect: 'follow',
     };
 
-    const response = await fetch(`${ API_URL2 }apps/${ AppId }/comments/`,
-      requestOptions,);
+    const response = await fetch(`${API_URL2}apps/${AppId}/comments/`,
+      requestOptions);
     const result = await response.text();
     return result;
   } catch (error) {
