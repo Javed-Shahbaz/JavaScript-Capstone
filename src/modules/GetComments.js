@@ -10,7 +10,6 @@ const getComments = async (itemId) => {
   const url = `${API_URL2}apps/${AppId}/comments?item_id=${itemId}`;
   const movieComments = await getData(url);
 
-
   if (movieComments.length > 0) { 
     countComments(itemId);
     document.querySelector('.comment_count').textContent = `(${movieComments.length})`;
