@@ -1,4 +1,4 @@
-// import { API_URL2, AppId } from './Vars.js';
+import { API_URL2, AppId } from './Vars.js';
 import { getData } from './ApiSimpson.js';
 
 const getComments = async (itemId) => {
