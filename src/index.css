@@ -16,11 +16,12 @@ body {
 
 button {
   font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
+  font-size: large;
   cursor: pointer;
   width: 90%;
   border: none;
   background-color: hsl(200, 87%, 47%);
-  color: hsl(56, 100%, 49%);
+  color: hsl(60, 100%, 2%);
   box-shadow: 3px 3px 4px #193b6e;
   border-radius: 5px;
   padding: 0.43rem;
@@ -36,7 +37,7 @@ ul {
   list-style: none;
 }
 
-#principal {
+#principle {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,41 +77,6 @@ header {
   color: hsl(13, 87%, 57%);
   text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
 }
-
-/* .menu {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1.56em;
-}
-
-.menu ul li:hover {
-  transform: scale(1.1);
-}
-
-header span {
-  display: none;
-  color: hsl(13, 87%, 57%);
-}
-
-.link-item {
-  text-decoration: none;
-  font-size: 0.87em;
-  font-weight: 800;
-  color: hsl(56, 100%, 49%);
-  text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
-  transition-duration: 300ms;
-}
-
-.link-item:hover {
-  color: hsl(0, 0%, 100%);
-} */
 
 main {
   width: 80%;
@@ -203,11 +169,11 @@ footer {
   background-color: hsl(98, 47%, 57%);
   padding: 1.25em;
   margin-top: 1.25em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1em;
+  font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
+  font-size: 1.2rem;
   font-weight: 700;
   color: hsl(0, 0%, 1%);
-  text-align: center;
+  text-align: left;
 }
 
 #popup {
@@ -260,8 +226,61 @@ footer {
   justify-content: space-between;
 }
 
-#addForm {
+.addForm {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5em;
+  width: 50%;
+  align-items: center;
+}
+
+.inputname {
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 50%;
+  padding-left: 1em;
+}
+
+#addCommentBtn {
+  background-color: initial;
+  background-image: linear-gradient(-190deg, rgb(39, 218, 51), #ea4621);
+  box-shadow: rgba(0.8, 1, 1, 0.7) 0 4px 8px;
+  border-radius: 7px;
+  color: whitesmoke;
+  cursor: pointer;
+  display: inline-block;
+  font-size: large;
+  font-family: Poppins, sans-serif;
+  height: 20px;
+  line-height: 20px;
+  outline: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  z-index: 9;
+  border: 1px salmon;
+  transition: box-shadow 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  #dinamic-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+
+  #dinamic-content {
+    grid-template-columns: 1fr;
+  }
 }
