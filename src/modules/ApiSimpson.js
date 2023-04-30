@@ -1,6 +1,5 @@
-import { API_URL1 } from './Vars.js'; // , API_URL2
+import { API_URL1 } from './Vars.js';
 
-// async function getData() {
 const getData = async (link) => {
   try {
     const response = await fetch(link, {

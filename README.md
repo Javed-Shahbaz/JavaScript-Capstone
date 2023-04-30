@@ -34,7 +34,8 @@
 
 > Its a daily rountine list for users to write down their task.
 
-**[JS Capstone]** is a project for microvesre.
+**[JS Capstone]** 
+- The JavaScript capstone project is about building our own web application based on two external APIs. First, we retrieve movies and TV Series from the [ API] and then record user interactions (likes and comments) using the [Involvement API]
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,20 +47,6 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -82,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- [https://javed-shahbaz.github.io/JavaScript-Capstone](https://javed-shahbaz.github.io/JavaScript-Capstone/)
+ https://javed-shahbaz.github.io/JavaScript-Capstone
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
