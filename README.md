@@ -159,6 +159,8 @@ Example command:
 
 https://javed-shahbaz.github.io/JavaScript-Capstone/
 
+https://www.loom.com/share/926f4b8d4b334b9fb282c0dd2f1aa562
+
 <!--
 Example:
 
@@ -179,12 +181,6 @@ Example:
 - GitHub: [https://github.com/Javed-Shahbaz)
 - Twitter: [https://twitter.com/javedshahbaz007)
 - LinkedIn: [https://www.linkedin.com/in/javed-shahbaz)
-
-👤 **Larry Villegas**
-
-- GitHub: [https://github.com/LarryIVC)
-- Twitter: [https://twitter.com/LarryVillegas)
-- LinkedIn: [https://www.linkedin.com/in/larry-villegas-26216b259/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
