@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Simpsons Fans Club - JavaScript - Capstone</title>
+<script defer src="main.js"></script></head>
+
+<body>
+  <div id="principle">
+    <header>
+      <p id="logo">The Simpsons Fans Club</p>
+      <h2 id="n-episodes">Episodes( <span id="nro"></span> )</h2>
+    </header>
+    <main>
+      <h1>The Simpsons - Season 10</h1>
+      <div id="dinamic-content">
+      </div>
+    </main>
+    <footer>
+      <p>Created by: Javed Shahbaz under Microverse Lincense</p>
+    </footer>
+  </div>
+  <div id="popup">
+    <div class="img-header">
+      <img id="img-popup"
+        src="https://images-na.ssl-images-amazon.com/images/M/MV5BYjFiMzA2MGMtNjQwMC00YmVkLWFiODgtZWVkMmU4Yzg2YTQ3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg"
+        alt="" id="image-episode">
+      <p id="cross-btn">X</p>
+    </div>
+    <h2 class="popup-name">Lard of the Dance</h2>
+    <div class="details">
+      <div class="element">
+        <p class="ep-txt">Episode <span id="ep-number"></span></p>
+      </div>
+      <div class="element">
+        <p id="desc">A new girl arrives at Springfield Elementary and becomes instantly popular, with Lisa forced to
+          organize a dance at her school, while Homer and Bart try to start their own grease business.</p>
+      </div>
+    </div>
+    <div id="comments">
+
+    </div>
+    <form class="addForm">
+      <h2 id="addcomment">Add Comments</h2>
+      <input class="inputname" type="text" name="name" placeholder="Your name" required>
+      <input id="inputcomments" class="inputname" type="text" name="inputcomments" placeholder="Your comments" required>
+      <button id="addCommentBtn" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
