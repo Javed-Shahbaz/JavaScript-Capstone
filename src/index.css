@@ -16,11 +16,12 @@ body {
 
 button {
   font-family: 'Simpsonfont', 'Franklin Gothic Medium', sans-serif;
+  font-size: large;
   cursor: pointer;
   width: 90%;
   border: none;
   background-color: hsl(200, 87%, 47%);
-  color: hsl(56, 100%, 49%);
+  color: hsl(60, 100%, 2%);
   box-shadow: 3px 3px 4px #193b6e;
   border-radius: 5px;
   padding: 0.43rem;
@@ -76,41 +77,6 @@ header {
   color: hsl(13, 87%, 57%);
   text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
 }
-
-/* .menu {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.menu ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1.56em;
-}
-
-.menu ul li:hover {
-  transform: scale(1.1);
-}
-
-header span {
-  display: none;
-  color: hsl(13, 87%, 57%);
-}
-
-.link-item {
-  text-decoration: none;
-  font-size: 0.87em;
-  font-weight: 800;
-  color: hsl(56, 100%, 49%);
-  text-shadow: 2px 2px 1px hsl(0, 0%, 0%);
-  transition-duration: 300ms;
-}
-
-.link-item:hover {
-  color: hsl(0, 0%, 100%);
-} */
 
 main {
   width: 80%;
