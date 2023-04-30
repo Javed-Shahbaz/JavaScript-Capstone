@@ -36,7 +36,7 @@ ul {
   list-style: none;
 }
 
-#principal {
+#principle {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,4 +264,24 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  #dinamic-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+
+  #dinamic-content {
+    grid-template-columns: 1fr;
+  }
 }
