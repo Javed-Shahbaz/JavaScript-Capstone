@@ -7,7 +7,7 @@ import { API_URL1 } from './Vars.js';
 import getComments from './GetComments.js';
 
 // Render cards
-async function renderCards() {
+const renderCards = async () => {
   // Data from simpson api
   const data = await getData(API_URL1);
   const CardsContainer = document.getElementById('dinamic-content');
