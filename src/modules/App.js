@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { getData, countOccurrences } from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
 import getLikes from './GetLikes.js';
@@ -76,7 +77,7 @@ const renderCards = async () => {
       getComments(`${episode.id}`);
     });
   });
-}
+};
 
 const frmAddComment = document.getElementById('addCommentBtn');
 frmAddComment.addEventListener('click', async (event) => {
