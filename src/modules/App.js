@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { getData, countOccurrences } from './ApiSimpson.js';
 import iconLike from '../assests/like.png';
 import getLikes from './GetLikes.js';
@@ -98,7 +99,7 @@ frmAddComment.addEventListener('click', async (event) => {
   }
 });
 
-const cbtn = document.getElementById('cross-btn', 'popup');
+const cbtn = document.getElementById('cross-btn');
 cbtn.addEventListener('click', () => {
   popup.classList.remove('show');
 });
